@@ -1,0 +1,16 @@
+[ind_du, du] = find_du(u);
+
+t0 = t(ind_du);
+
+y0 = y(ind_du);
+
+
+for n = 1 : length(du)
+    
+    y_id = y(ind_du(n) : ind_du(n+1));
+    t_id = t(ind_du(n) : ind_du(n+1));
+    [y_norm,t_norm] = normalisation(y_norm,du(n),t_norm);
+   
+    
+    
+end

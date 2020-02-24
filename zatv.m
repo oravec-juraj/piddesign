@@ -1,0 +1,93 @@
+% ZATV
+% Spusti sa z VYB_IDENT, z REG alebo z OKNO
+% Sluzi na overenie, ci sa ma znovu povolit novy vypocet n, K, T, D, resp.
+% T_pe, ksi_pe, D_pe
+
+% Copyright is with the following author(s):
+%
+% (c) 2012 Juraj Oravec, Slovak University of Technology in Bratislava,
+% juraj.oravec@stuba.sk
+% (c) 2012 Monika Bakosova, Slovak University of Technology in Bratislava,
+% monika.bakosova@stuba.sk
+% ------------------------------------------------------------------------------
+% Legal note:
+% This program is free software; you can redistribute it and/or
+% modify it under the terms of the GNU General Public
+% License as published by the Free Software Foundation; either
+% version 2.1 of the License, or (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+% General Public License for more details.
+%
+% You should have received a copy of the GNU General Public
+% License along with this library; if not, write to the
+% Free Software Foundation, Inc.,
+% 59 Temple Place, Suite 330,
+% Boston, MA 02111-1307 USA
+%
+% ------------------------------------------------------------------------------
+
+
+% Premenna J1, ktora urcuje, ci uz bola spustena synteza regulatora alebo
+% test kvality. Ak ano, J1 == 1, inak J1 == 0
+
+% Premenna J2, ktora urcuje, kam sa program vrati, 
+% ked uzivatel suhlasi so zatvorenim okien v ZATV
+% Ak J2 == 1 SPUSTI - VYB_IDENT (J2 def. v VYB_IDENT)
+% Ak J2 == 2 SPUSTI - PARAM_VL2 (J2 def. v PARAM_VL2)
+% Ak J2 == 3 SPUSTI - SIMUL_PARAM (J2 def. v SIMUL_PARAM)
+% Ak J2 == 4 SPUSTI - FILTRACIA (J2 def. v FILTRACIA)
+
+
+% Makes unable to open more than onefigure "zatv"
+zatv_fig = findobj('Tag','ptt_zatv');
+if(isempty(zatv_fig) == 0)
+    close(zatv_fig)
+end
+clear('zatv_fig');
+
+
+% ZATV figure
+    pth_fig = figure('Color','red',...
+          'Resize','off',...
+          'Numbertitle','off',...
+          'Tag','ptt_zatv',...
+          'Menubar',ptv_fig_menubar,...
+          'name',ptg_string(1,7,ptv_str_lang), ...
+          'position',[100 100 315 140]);
+
+    % Clolourful effect
+    ptv_cfbcg = get(findobj('Tag','pt'),'UserData');
+    if(ptv_cfbcg==1)
+        ptf_cfbcg(gcf,2)
+    end
+    
+      pth_text = uicontrol(gcf,...
+          'Style','text',...
+          'position',[15 10 285 120],...
+          'Fontsize',[12],...
+          'ForegroundColor','black',...
+          'BackgroundColor',[fgcolor],... 
+          'Fontweight','bold',...
+          'HorizontalAlignment','center',...
+          'String',ptg_string(2,2,ptv_str_lang));
+      
+      pth_but1 = uicontrol(gcf,...
+          'Style','push',...
+          'Position',[45 15 90 25],...
+          'Fontsize',[11],...
+          'String',ptg_string(3,1,ptv_str_lang),...
+          'Fontweight','bold',...
+          'ForegroundColor','red',...
+          'CallBack','J1=0;close all,okno,if(J2==1),vyb_ident,end,if(J2==2),param_vl2,end,if(J2==3),simul_param,end,if(J2==4),filtracia,end');  
+      
+      pth_but2 = uicontrol(gcf,...
+          'Style','push',...
+          'Position',[175 15 90 25],...
+          'Fontsize',[11],...
+          'String',ptg_string(3,23,ptv_str_lang),...
+          'Fontweight','bold',...
+          'ForegroundColor','black',...
+          'CallBack','close');

@@ -1,0 +1,53 @@
+% PTU_CMD
+%
+%   Function PTU_CMD enables to update the software PIDDESIGN.
+%
+%   juraj.oravec@stuba.sk
+%
+%   2012.04.17
+
+% Copyright is with the following author(s):
+%
+% (c) 2012 Juraj Oravec, Slovak University of Technology in Bratislava,
+% juraj.oravec@stuba.sk
+% (c) 2012 Monika Bakosova, Slovak University of Technology in Bratislava,
+% monika.bakosova@stuba.sk
+% ------------------------------------------------------------------------------
+% Legal note:
+% This program is free software; you can redistribute it and/or
+% modify it under the terms of the GNU General Public
+% License as published by the Free Software Foundation; either
+% version 2.1 of the License, or (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+% General Public License for more details.
+%
+% You should have received a copy of the GNU General Public
+% License along with this library; if not, write to the
+% Free Software Foundation, Inc.,
+% 59 Temple Place, Suite 330,
+% Boston, MA 02111-1307 USA
+%
+% ------------------------------------------------------------------------------
+
+function ptu_out = ptu_cmd(ptu_opt)
+
+% Default options
+%
+ptu_out_default.update = 0;    % Test version
+
+% Input check
+%
+if (nargin==0)
+    ptu_out = ptu_out_default;    % Test version
+end
+if (nargin==1)&(ptu_opt=='')
+    ptu_out = ptu_out_default;    % Test version
+end
+
+% Test version
+%
+ptu_out = ptu_out_default;    % Test version
+ptu_out.updateinfo = 'Nothing changed.';
