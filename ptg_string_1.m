@@ -12,32 +12,6 @@
 %   In case required string cannot be found in Slovak, function PTG_STRING_0
 %   is called to return required string in English
 
-% Copyright is with the following author(s):
-%
-% (c) 2012 Juraj Oravec, Slovak University of Technology in Bratislava,
-% juraj.oravec@stuba.sk
-% (c) 2012 Monika Bakosova, Slovak University of Technology in Bratislava,
-% monika.bakosova@stuba.sk
-
-% ------------------------------------------------------------------------------
-% Legal note:
-% This program is free software; you can redistribute it and/or
-% modify it under the terms of the GNU General Public
-% License as published by the Free Software Foundation; either
-% version 2.1 of the License, or (at your option) any later version.
-%
-% This program is distributed in the hope that it will be useful,
-% but WITHOUT ANY WARRANTY; without even the implied warranty of
-% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-% General Public License for more details.
-%
-% You should have received a copy of the GNU General Public
-% License along with this library; if not, write to the
-% Free Software Foundation, Inc.,
-% 59 Temple Place, Suite 330,
-% Boston, MA 02111-1307 USA
-%
-% ------------------------------------------------------------------------------
 
 function ptv_str=ptg_string_1(ptv_str_cat,ptv_str_num)
 
@@ -58,33 +32,33 @@ switch ptv_str_cat
               case 1
                   ptv_str = 'PIDDESIGN';
               case 2
-                  ptv_str = 'SyntÈza regul·tora';    
+                  ptv_str = 'Synt√©za regul√°tora';    
               case 3
-                  ptv_str = 'Identifik·cia';
+                  ptv_str = 'Identifik√°cia';
               case 4
                   ptv_str = 'Nastavenia';                    
               case 5
-                  ptv_str = 'Prenosov· funkcia';
+                  ptv_str = 'Prenosov√° funkcia';
               case 6
                   ptv_str = 'Chyba!';
               case 7
                   ptv_str = 'Pozor!';
               case 8
-                  ptv_str = 'Test Kvality Regul·tora';
+                  ptv_str = 'Test Kvality Regul√°tora';
               case 9
-                  ptv_str = 'Identifik·cia z vlastn˝ch parmetrov';
+                  ptv_str = 'Identifik√°cia z vlastn√Ωch parametrov';
               case 10
-                  ptv_str = 'KritÈria kvality';
+                  ptv_str = 'Krit√©ria kvality';
               case 11
-                  ptv_str = 'NaËÌtaù d·tov˝ s˙bor';
+                  ptv_str = 'Naƒç√≠ta≈• d√°tov√Ω s√∫bor';
               case 12
-                  ptv_str = 'Normaliz·cia';
+                  ptv_str = 'Normaliz√°cia';
               case 13
-                  ptv_str = 'Spracovanie ˙dajov';
+                  ptv_str = 'Spracovanie √∫dajov';
               case 14
-                  ptv_str = 'Filtr·cia';
+                  ptv_str = 'Filtr√°cia';
               case 15
-                  ptv_str = 'Uloûiù d·tov˝ s˙bor';
+                  ptv_str = 'Ulo≈æi≈• d√°tov√Ω s√∫bor';
               case 16
                   ptv_str = 'Porovnanie';
               otherwise
@@ -97,39 +71,39 @@ switch ptv_str_cat
         
           switch ptv_str_num
               case 1
-                  ptv_str = 'Pre moûnosù "Vypn˙ù" a "Reötart" bud˙ vöetky premennÈ vymazanÈ z pam‰ti a okn· pozatv·rane!';
+                  ptv_str = 'Pre mo≈ænos≈• "Vypn√∫≈•" a "Re≈°tart" bud√∫ v≈°etky premenn√© vymazan√© z pam√§ti a okn√° pozatv√°ran√©!';
               case 2
-                  ptv_str = ' SkutoËne chcete zadaù novÈ parametre prenosu riadenÈho systÈmu? Ak ·no, vöetky ostatnÈ okn· sa zatvoria!';
+                  ptv_str = ' Skutoƒçne chcete zada≈• nov√© parametre prenosu riaden√©ho syst√©mu? Ak √°no, v≈°etky ostatn√© okn√° sa zatvoria!';
               case 3
-                  ptv_str = ' PIDTOOL uû bol spusten˝!';
+                  ptv_str = ' PIDTOOL u≈æ bol spusten√Ω!';
               case 4
-                  ptv_str = 'Parametre PID regul·tora:';
+                  ptv_str = 'Parametre PID regul√°tora:';
               case 5
-                  ptv_str = 'Prenos regulovanÈho systÈmu:';
+                  ptv_str = 'Prenos regulovan√©ho syst√©mu:';
               case 6
-                  ptv_str = 'ûiadan· veliËina w(t)';
+                  ptv_str = '≈æiadan√° veliƒçina w(t)';
               case 7
-                  ptv_str = 'poruchov· veliËina r(t)';
+                  ptv_str = 'poruchov√° veliƒçina r(t)';
               case 8
-                  ptv_str = 'Parametre simul·cie:';
+                  ptv_str = 'Parametre simul√°cie:';
               case 9
-                  ptv_str = 'Konötanty pre kritÈria kvality:';
+                  ptv_str = 'Kon≈°tanty pre krit√©ria kvality:';
               case 10
-                  ptv_str = 'Chyba identifik·cie:';
+                  ptv_str = 'Chyba identifik√°cie:';
               case 11
                   ptv_str = ' PCH';
               case 12
-                  ptv_str = 'Zadajte veækosù a Ëas skokovej zmeny';
+                  ptv_str = 'Zadajte ve¬ækos≈• a ƒças skokovej zmeny';
               case 13
                   ptv_str = ' Typ filtra';
               case 14
-                  ptv_str = ' D·tov˝ s˙bor bol ˙speöne uloûen˝!';
+                  ptv_str = ' D√°tov√Ω s√∫bor bol √∫spe≈°ne ulo≈æen√Ω!';
               case 15
                   ptv_str = ' Typ modelu:';
               case 16
                   ptv_str = ' Parametre modelu:';
               case 17
-                  ptv_str = ' Poûadovan˝ niûöÌ r·d n_niûöie:';
+                  ptv_str = ' Po≈æadovan√Ω ni≈æ≈°√≠ r√°d n_ni≈æ≈°ie:';
               otherwise
                   ptv_str=ptg_string_0(ptv_str_cat,ptv_str_num);
            end
@@ -142,51 +116,51 @@ switch ptv_str_cat
               case 1
                   ptv_str = 'OK';
               case 2
-                  ptv_str = 'Sp‰ù';
+                  ptv_str = 'Sp√§≈•';
               case 3
-                  ptv_str = 'SyntÈza regul·tora';
+                  ptv_str = 'Synt√©za regul√°tora';
               case 4
-                  ptv_str = 'Identifik·cia';
+                  ptv_str = 'Identifik√°cia';
               case 5
                   ptv_str = 'Nastavenia';
               case 6
-                  ptv_str = 'Vypn˙ù';
+                  ptv_str = 'Vypn√∫≈•';
               case 7
-                  ptv_str = 'Reötart';
+                  ptv_str = 'Re≈°tart';
               case 8
-                  ptv_str = 'Zavrieù grafy';
+                  ptv_str = 'Zavrie≈• grafy';
               case 9
                   ptv_str = 'Pomoc';
               case 10
                   ptv_str = 'Test Kvality';
               case 11
-                  ptv_str = 'ZÌskaù prenos';
+                  ptv_str = 'Z√≠ska≈• prenos';
               case 12
-                  ptv_str = 'Identifik·cia z vlastn˝ch parametrov';
+                  ptv_str = 'Identifik√°cia z vlastn√Ωch parametrov';
               case 13
-                  ptv_str = 'Identifik·cia z d·tovÈho s˙boru';
+                  ptv_str = 'Identifik√°cia z d√°tov√©ho s√∫boru';
               case 14
-                  ptv_str = 'Identifik·cia z modelu';
+                  ptv_str = 'Identifik√°cia z modelu';
               case 15
-                  ptv_str = 'SystÈm 1. r·du';
+                  ptv_str = 'Syst√©m 1. r√°du';
               case 16
-                  ptv_str = 'SystÈm n-tÈho r·du';
+                  ptv_str = 'Syst√©m n-t√©ho r√°du';
               case 17
                   ptv_str = 'Porovnanie';
               case 18
-                  ptv_str = 'Identifik·cia s niûöÌm r·dom';
+                  ptv_str = 'Identifik√°cia s ni≈æ≈°√≠m r√°dom';
               case 19
-                  ptv_str = 'Normaliz·cia';
+                  ptv_str = 'Normaliz√°cia';
               case 20
-                  ptv_str = 'Filtr·cia';
+                  ptv_str = 'Filtr√°cia';
               case 21
-                  ptv_str = 'Uloûiù';
+                  ptv_str = 'Ulo≈æi≈•';
               case 22
-                  ptv_str = 'Porovnaù';
+                  ptv_str = 'Porovna≈•';
               case 23
-                  ptv_str = 'Zruöiù';
+                  ptv_str = 'Zru≈°i≈•';
               case 24
-                  ptv_str = 'Ladenie identifik·cie';
+                  ptv_str = 'Ladenie identifik√°cie';
               case 25
                   ptv_str = 'Prec+';
               otherwise
@@ -199,17 +173,17 @@ switch ptv_str_cat
         
           switch ptv_str_num
               case 1
-                  ptv_str = ' Prenos aperiodickÈho systÈmu | Prenos tlmene kmitavÈho systÈmu';
+                  ptv_str = ' Prenos aperiodick√©ho syst√©mu | Prenos tlmene kmitav√©ho syst√©mu';
               case 2
-                  ptv_str = ' Aperiodick· | Tlmene kmitav·';
+                  ptv_str = ' Aperiodick√° | Tlmene kmitav√°';
               case 3
-                  ptv_str = 'FIR|IIR - Butterworthov|IIR - Cebyöev|IIR - Cebyöev inv.|IIR - eliptick˝';
+                  ptv_str = 'FIR|IIR - Butterworthov|IIR - Ceby≈°ev|IIR - Ceby≈°ev inv.|IIR - eliptick√Ω';
               case 4
-                  ptv_str = 'dolnopriepustn˝|hornopriepustn˝|p·smov˝ z·ver';
+                  ptv_str = 'dolnopriepustn√Ω|hornopriepustn√Ω|p√°smov√Ω z√°ver';
               case 5
-                  ptv_str = 'jednoduch˝|dvojn·sobn˝';
+                  ptv_str = 'jednoduch√Ω|dvojn√°sobn√Ω';
               case 6
-                  ptv_str = ' Vöeobecn˝ tvar |Aperiodick˝ | Tlmene kmitav˝';
+                  ptv_str = ' V≈°eobecn√Ω tvar |Aperiodick√Ω | Tlmene kmitav√Ω';
               otherwise
                   ptv_str=ptg_string_0(ptv_str_cat,ptv_str_num);
            end
@@ -222,9 +196,9 @@ switch ptv_str_cat
               case 1
                   ptv_str = ' Legenda';
               case 2
-                  ptv_str = ' Mrieûka';
+                  ptv_str = ' Mrie≈æka';
               case 3
-                  ptv_str = ' Kmitav˝ proces';
+                  ptv_str = ' Kmitav√Ω proces';
               otherwise
                   ptv_str=ptg_string_0(ptv_str_cat,ptv_str_num);
            end
@@ -235,9 +209,9 @@ switch ptv_str_cat
         
           switch ptv_str_num
               case 1
-                  ptv_str = ' Experiment·lne methody';
+                  ptv_str = ' Experiment√°lne met√≥dy';
               case 2
-                  ptv_str = ' AnalytickÈ methody';
+                  ptv_str = ' Analytick√© met√≥dy';
               case 3
                   ptv_str = ' P';
               case 4
@@ -260,33 +234,33 @@ switch ptv_str_cat
               case 2
                   ptv_str = 'Jazyk';
               case 3
-                  ptv_str = 'SyntÈza regul·tora';  
+                  ptv_str = 'Synt√©za regul√°tora';  
               case 4
-                  ptv_str = 'Identification';                  
+                  ptv_str = 'Identifik√°cia';                  
               case 5
-                  ptv_str = 'Filtr·cia';
+                  ptv_str = 'Filtr√°cia';
               case 6
-                  ptv_str = 'Kvalita regul·cie';                  
+                  ptv_str = 'Kvalita regul√°cie';                  
               case 7
-                  ptv_str = 'Vypn˙ù';
+                  ptv_str = 'Vypn√∫≈•';
               case 8
-                  ptv_str = 'Reötart';
+                  ptv_str = 'Re≈°tart';
               case 9
-                  ptv_str = 'Zavrieù grafy';
+                  ptv_str = 'Zavrie≈• grafy';
               case 10
                   ptv_str = 'Pomoc';
               case 11
                   ptv_str = 'Nastavenia';
               case 12
-                  ptv_str = 'Zapn˙ù efekty';
+                  ptv_str = 'Zapn√∫≈• efekty';
               case 13
-                  ptv_str = 'Vypn˙ù efekty';
+                  ptv_str = 'Vypn√∫≈• efekty';
               case 14
-                  ptv_str = 'Zobraz v˝sledky';
+                  ptv_str = 'Zobraz v√Ωsledky';
               case 15
-                  ptv_str = 'D·tum';
+                  ptv_str = 'D√°tum';
               case 16
-                  ptv_str = '»as';
+                  ptv_str = 'ƒças';
               otherwise
                   ptv_str=ptg_string_0(ptv_str_cat,ptv_str_num);
            end
@@ -342,9 +316,9 @@ switch ptv_str_cat
               case 23
                   ptv_str = 'Cas_Sim =';
               case 24
-                  ptv_str = 'U_Doln·_Hranica =';
+                  ptv_str = 'U_Doln√°_Hranica =';
               case 25
-                  ptv_str = 'U_Horn·_Hranica =';
+                  ptv_str = 'U_Horn√°_Hranica =';
               case 26
                   ptv_str = 'Q_u pre ISE_u =';
               case 27
@@ -390,17 +364,17 @@ switch ptv_str_cat
               case 47
                   ptv_str = 'delta_u =';
               case 48
-                  ptv_str = 'r·d filtra =';
+                  ptv_str = 'r√°d filtra =';
               case 49
                   ptv_str = 'omega =';
               case 50
                   ptv_str = 'zvlnenie r =';
               case 51
-                  ptv_str = 'Odch˝lka filtr·cie =';
+                  ptv_str = 'Odch√Ωlka filtr√°cie =';
               case 52
                   ptv_str = 'n_Max =';
               case 53
-                  ptv_str = 'Cas_Regul·cie';
+                  ptv_str = 'Cas_Regul√°cie';
               case 54
                   ptv_str = 'Preregulovanie';
               case 55
@@ -423,103 +397,103 @@ switch ptv_str_cat
         
           switch ptv_str_num
               case 1
-                  ptv_str = ' Zadali ste nekorektnÈ parametre! Vstupom mÙûu byù len re·lne ËÌsla!';
+                  ptv_str = ' Zadali ste nekorektn√© parametre! Vstupom m√¥≈æu by≈• len re√°lne ƒç√≠sla!';
               case 2
-                  ptv_str = ' R·d n mÙûe byù len celÈ kladnÈ ËÌslo!';
+                  ptv_str = ' R√°d n m√¥≈æe by≈• len cel√© kladn√© ƒç√≠slo!';
               case 3
-                  ptv_str = ' DopravnÈ oneskorenie D je nez·pornÈ ËÌslo!';
+                  ptv_str = ' Dopravn√© oneskorenie D je nez√°porn√© ƒç√≠slo!';
               case 4
-                  ptv_str = ' Koeficient tlmenia ksi_pe m· byù kladnÈ ËÌslo menöie alebo rovnÈ 1!';
+                  ptv_str = ' Koeficient tlmenia ksi_pe m√° by≈• kladn√© ƒç√≠slo men≈°ie alebo rovn√© 1!';
               case 5
-                  ptv_str = ' S˙bor POMOC.HTML nen·jden˝!';
+                  ptv_str = ' S√∫bor POMOC.HTML nen√°jden√Ω!';
               case 6
-                  ptv_str = ' Parametre regul·tora musia byù re·lne ËÌsla!';
+                  ptv_str = ' Parametre regul√°tora musia by≈• re√°lne ƒç√≠sla!';
               case 7
-                  ptv_str = ' Cas_Sim nesmie byù z·pornÈ ËÌslo!';
+                  ptv_str = ' Cas_Sim nesmie by≈• z√°porn√© ƒç√≠slo!';
               case 8
-                  ptv_str = ' W_Cas_Zmeny musÌ byù kladnÈ ËÌslo!';
+                  ptv_str = ' W_Cas_Zmeny mus√≠ by≈• kladn√© ƒç√≠slo!';
               case 9
-                  ptv_str = ' R_Cas_Zmeny musÌ byù kladnÈ ËÌslo!';
+                  ptv_str = ' R_Cas_Zmeny mus√≠ by≈• kladn√© ƒç√≠slo!';
               case 10
-                  ptv_str = ' Konötanty pre kritÈria kvality nesm˙ byù z·pornÈ ËÌsla!';
+                  ptv_str = ' Kon≈°tanty pre krit√©ria kvality nesm√∫ by≈• z√°porn√© ƒç√≠sla!';
               case 11
-                  ptv_str = ' U_Doln·_Hranica musÌ byù menöie ako U_Horn·_Hranica!';
+                  ptv_str = ' U_Doln√°_Hranica mus√≠ by≈• men≈°ie ako U_Horn√°_Hranica!';
               case 12
-                  ptv_str = ' Presnost_Riadenia musÌ byù v‰Ëöia ako 0 a menöia ako 1!';
+                  ptv_str = ' Presnost_Riadenia mus√≠ by≈• v√§ƒç≈°ia ako 0 a men≈°ia ako 1!';
               case 13
-                  ptv_str = ' Zadali ste nekorektnÈ parametre! Vstupom mÙûe byù len re·lny vektor!';
+                  ptv_str = ' Zadali ste nekorektn√© parametre! Vstupom m√¥≈æe by≈• len re√°lny vektor!';
               case 14
-                  ptv_str = ' Cas: t_0 < t_D < t_1 < t_2 < Cas_Sim! Alebo Ëas: t_0 < t_D <  t_Max < t_Min < Cas_Sim!';
+                  ptv_str = ' Cas: t_0 < t_D < t_1 < t_2 < Cas_Sim! Alebo ƒças: t_0 < t_D <  t_Max < t_Min < Cas_Sim!';
               case 15
-                  ptv_str = ' Ak je kladnÈ y_Inf, tak y_Min a y_0 musia byù menöie ako y_Max opaËne pre z·pornÈ y_Inf!';
+                  ptv_str = ' Ak je kladn√© y_Inf, tak y_Min a y_0 musia by≈• men≈°ie ako y_Max opaƒçne pre z√°porn√© y_Inf!';
               case 16
-                  ptv_str = 'Regulovan˝ proces nie je';
+                  ptv_str = 'Regulovan√Ω proces nie je';
               case 17
-                  ptv_str = ' r˝dzi,';
+                  ptv_str = ' r√Ωdzi,';
               case 18
-                  ptv_str = ' stabiln˝,';
+                  ptv_str = ' stabiln√Ω,';
               case 19
                   ptv_str = ' na hranici stability,';
               case 20
-                  ptv_str = ' riaditeæn˝,';
+                  ptv_str = ' riadite¬æn√Ω,';
               case 21
-                  ptv_str = ' pozorovateæn˝,';
+                  ptv_str = ' pozorovateƒæn√Ω,';
               case 22
-                  ptv_str = ' Znamienko zosilnenia regul·tora Z_R je opaËnÈ ako zosilnenie procesu K!';
+                  ptv_str = ' Znamienko zosilnenia regul√°tora Z_R je opaƒçn√© ako zosilnenie procesu K!';
               case 23
-                  ptv_str = ' Experiment·lne metody vyûaduj˙ aperiodick˝ model procesu!';
+                  ptv_str = ' Experiment√°lne met√≥dy vy≈æaduj√∫ aperiodick√Ω model procesu!';
               case 24
-                  ptv_str = ' Nie je moûnÈ pouûiù identifik·ciu tlmene kmitavÈho systÈmu! Sk˙ste identifik·ciu podæa Strejca!';
+                  ptv_str = ' Nie je mo≈æn√© pou≈æi≈• identifik√°ciu tlmene kmitav√©ho syst√©mu! Sk√∫ste identifik√°ciu pod¬æa Strejca!';
               case 25
-                  ptv_str = ' Vybran˝ d·tov˝ s˙bor musÌ maù prÌponu *.txt or *.dat!';
+                  ptv_str = ' Vybran√Ω d√°tov√Ω s√∫bor mus√≠ ma≈• pr√≠ponu *.txt or *.dat!';
               case 26
-                  ptv_str = ' Vybran˝ d·tov˝ s˙bor neobsahuje korektnÈ d·ta!';
+                  ptv_str = ' Vybran√Ω d√°tov√Ω s√∫bor neobsahuje korektn√© d√°ta!';
               case 27
-                  ptv_str = ' Zadan˝ Ëas t_0 nie je v d·tovom s˙bore!';
+                  ptv_str = ' Zadan√Ω ƒças t_0 nie je v d√°tovom s√∫bore!';
               case 28
-                  ptv_str = ' Omega musÌ byù vektor 1 alebo 2 prvokov s hodnotou od 0 do 1!';
+                  ptv_str = ' Omega mus√≠ by≈• vektor 1 alebo 2 prvokov s hodnotou od 0 do 1!';
               case 29
-                  ptv_str = ' R·d filtr·cie musÌ byù kladnÈ ËÌslo!';
+                  ptv_str = ' R√°d filtr√°cie mus√≠ by≈• kladn√© ƒç√≠slo!';
               case 30
-                  ptv_str = ' Hornopriepustn˝ filter vyûaduje omega ako jedno re·lne ËÌslo!';
+                  ptv_str = ' Hornopriepustn√Ω filter vy≈æaduje omega ako jedno re√°lne ƒç√≠slo!';
               case 31
-                  ptv_str = ' P·smov˝ z·ver vyûaduje omega ako dvojprvkov˝ vektor!';
+                  ptv_str = ' P√°smov√Ω z√°ver vy≈æaduje omega ako dvojprvkov√Ω vektor!';
               case 32
-                  ptv_str = ' Prvky vektora omega nemÙûu byù zhodnÈ!';
+                  ptv_str = ' Prvky vektora omega nem√¥≈æu by≈• zhodn√©!';
               case 33
-                  ptv_str = ' Cebyöevov filter vyûaduje jednoprvkov˝ vektor zvlnenia r!';
+                  ptv_str = ' ƒåeby≈°evov filter vy≈æaduje jednoprvkov√Ω vektor zvlnenia r!';
               case 34
-                  ptv_str = ' Dvojn·sobn· filtr·cia vyûaduje d·tov˝ s˙bor 3-kr·t vaËöÌ ako r·d filtr·cie!';
+                  ptv_str = ' Dvojn√°sobn√° filtr√°cia vy≈æaduje d√°tov√Ω s√∫bor 3-kr√°t vaƒç≈°√≠ ako r√°d filtr√°cie!';
               case 35
-                  ptv_str = ' D·tov˝ s˙bor nebol uloûen˝';
+                  ptv_str = ' D√°tov√Ω s√∫bor nebol ulo≈æen√Ω';
               case 36
-                  ptv_str = ' Vektor MEN musÌ maù viac ako jeden prvok!';
+                  ptv_str = ' Vektor MEN mus√≠ ma≈• viac ako jeden prvok!';
               case 37
-                  ptv_str = ' Nie je moûnÈ identifikovaù s r·dom niûöÌm ako 1!';
+                  ptv_str = ' Nie je mo≈æn√© identifikova≈• s r√°dom ni≈æ≈°√≠m ako 1!';
               case 38
-                  ptv_str = ' R·d n_niûöie musÌ byù niûöie ako n_Max!';
+                  ptv_str = ' R√°d n_ni≈æ≈°ie mus√≠ by≈• ni≈æ≈°ie ako n_Max!';
               case 39
-                  ptv_str = ' Parameter T_I musÌ byù kladnÈ re·lne ËÌslo!';
+                  ptv_str = ' Parameter T_I mus√≠ by≈• kladn√© re√°lne ƒç√≠slo!';
               case 40
-                  ptv_str = ' Parameter T_D musÌ byù kladnÈ re·lne ËÌslo!';
+                  ptv_str = ' Parameter T_D mus√≠ by≈• kladn√© re√°lne ƒç√≠slo!';
               case 41
-                  ptv_str = ' Parameter T musÌ byù kladnÈ re·lne ËÌslo!';
+                  ptv_str = ' Parameter T mus√≠ by≈• kladn√© re√°lne ƒç√≠slo!';
               case 42
-                  ptv_str = ' Parameter T_pe musÌ bzù kladnÈ re·lne ËÌslo!';
+                  ptv_str = ' Parameter T_pe mus√≠ by≈• kladn√© re√°lne ƒç√≠slo!';
               case 43
-                  ptv_str = ' Uzavret˝ regulaËn˝ obvod je nestabiln˝!';
+                  ptv_str = ' Uzavret√Ω regulaƒçn√Ω obvod je nestabiln√Ω!';
               case 44
-                  ptv_str = ' Uzavret˝ regulaËn˝ obvod je na hranici stability!';
+                  ptv_str = ' Uzavret√Ω regulaƒçn√Ω obvod je na hranici stability!';
               case 45
-                  ptv_str = ' Parameter b_W musÌ byù v‰Ëöia ako 0!';
+                  ptv_str = ' Parameter b_W mus√≠ by≈• v√§ƒç≈°ia ako 0!';
               case 46
-                  ptv_str = ' Touto metodou nie je moûnÈ navrhn˙ù regul·tor pre zadanÈ parametre modelu procesu!';
+                  ptv_str = ' Touto met√≥dou nie je mo≈æn√© navrhn√∫≈• regul√°tor pre zadan√© parametre modelu procesu!';
               case 47
-                  ptv_str = ' V prÌpade n·vrhu PID alebo PD regul·tora dopravnÈ oneskorenie D musÌ byù kladnÈ ËÌslo!';
+                  ptv_str = ' V pr√≠pade n√°vrhu PID alebo PD regul√°tora dopravn√© oneskorenie D mus√≠ by≈• kladn√© ƒç√≠slo!';
               case 48
-                  ptv_str = ' Poûaduje sa r·d n menöÌ ako 9!';
+                  ptv_str = ' Po≈æaduje sa r√°d n men≈°√≠ ako 9!';
               case 49
-                  ptv_str = ' Funkcia EXPORTFIG nen·jden·!';  
+                  ptv_str = ' Funkcia EXPORTFIG nen√°jden√°!';  
               otherwise
                   ptv_str=ptg_string_0(ptv_str_cat,ptv_str_num);
            end
@@ -531,51 +505,51 @@ switch ptv_str_cat
         
           switch ptv_str_num
               case 1
-                  ptv_str = ' Sp‰tnov‰zbov· prechodov· charakteristika';
+                  ptv_str = ' Sp√§tnov√§zbov√° prechodov√° charakteristika';
               case 2
-                  ptv_str = ' RegulaËn˝ vstup';
+                  ptv_str = ' Regulaƒçn√Ω vstup';
               case 3
-                  ptv_str = ' cas t';
+                  ptv_str = ' ƒças t';
               case 4
-                  ptv_str = ' V˝stupn· velicina y(t)';
+                  ptv_str = ' V√Ωstupn√° veliƒçina y(t)';
               case 5
-                  ptv_str = ' Akcn· velicina u(t)';
+                  ptv_str = ' Akƒçn√° veliƒçina u(t)';
               case 6
-                  ptv_str = ' OV y(t) bez obmedzenÌ na MV u(t)';
+                  ptv_str = ' OV y(t) bez obmedzen√≠ na MV u(t)';
               case 7
-                  ptv_str = ' OV y(t) po obmedzenÌ MV u(t)';
+                  ptv_str = ' OV y(t) po obmedzen√≠ MV u(t)';
               case 8
-                  ptv_str = ' Horn· hranica OV y(t)';
+                  ptv_str = ' Horn√° hranica OV y(t)';
               case 9
-                  ptv_str = ' Doln· hranica OV y(t)';
+                  ptv_str = ' Doln√° hranica OV y(t)';
               case 10
-                  ptv_str = ' ûiadan· velicina w(t)';
+                  ptv_str = ' ≈æiadan√° veliƒçina w(t)';
               case 11
-                  ptv_str = ' MV u(t) bez obmedzenÌ';
+                  ptv_str = ' MV u(t) bez obmedzen√≠';
               case 12
-                  ptv_str = ' MV u(t) pred obmedzenÌm';
+                  ptv_str = ' MV u(t) pred obmedzen√≠m';
               case 13
-                  ptv_str = ' MV u(t) po obmedzenÌ';
+                  ptv_str = ' MV u(t) po obmedzen√≠';
               case 14
-                  ptv_str = 'V˝sledok identifik·cie';
+                  ptv_str = 'V√Ωsledok identifik√°cie';
               case 15
-                  ptv_str = 'Udaje nacÌtanÈ z d·tovÈho s˙boru';
+                  ptv_str = '√ödaje naƒç√≠tan√© z d√°tov√©ho s√∫boru';
               case 16
-                  ptv_str = 'Prechodov· charakteristika';
+                  ptv_str = 'Prechodov√° charakteristika';
               case 17
-                  ptv_str = 'PÙvodn˝ v˝stup';
+                  ptv_str = 'P√¥vodn√Ω v√Ωstup';
               case 18
-                  ptv_str = 'V˝stup z filtr·cie';
+                  ptv_str = 'V√Ωstup z filtr√°cie';
               case 19
-                  ptv_str = 'Porovnanie prechodov˝ch charakteristÌk';
+                  ptv_str = 'Porovnanie prechodov√Ωch charakterist√≠k';
               case 20
-                  ptv_str = 'Porovn·van˝ v˝stup';
+                  ptv_str = 'Porovn√°van√Ω v√Ωstup';
               case 21
-                  ptv_str = 'Model s niûöÌm r·dom';
+                  ptv_str = 'Model s ni≈æ≈°√≠m r√°dom';
               case 22
-                  ptv_str = 'Normalizovan˝ v˝stup';
+                  ptv_str = 'Normalizovan√Ω v√Ωstup';
               case 23
-                  ptv_str = 'Nomin·lny v˝stup';
+                  ptv_str = 'Nomin√°lny v√Ωstup';
               otherwise
                   ptv_str=ptg_string_0(ptv_str_cat,ptv_str_num);
            end
@@ -586,93 +560,93 @@ switch ptv_str_cat
         
           switch ptv_str_num
               case 1
-                  ptv_str = 'Zieglerova - Nicholsova metoda|Strejcova metoda|Cohenova - Coonova metoda|Chienova - Hronesova - Reswickova metoda (0% prereg.)|Chienova - Hronesova - Reswickova metoda (20% prereg.)|Minimum ITAE metoda (˙loha regul·cie)|Lopezova IAE-ISE metoda';
+                  ptv_str = 'Zieglerova - Nicholsova met√≥da|Strejcova met√≥da|Cohenova - Coonova met√≥da|Chienova - Hronesova - Reswickova met√≥da (0% prereg.)|Chienova - Hronesova - Reswickova met√≥da (20% prereg.)|Minimum ITAE met√≥da (√∫loha regul√°cie)|Lopezova IAE-ISE met√≥da';
               case 2
-                  ptv_str = 'Zieglerova - Nicholsova metoda|Strejcova metoda|Cohenova - Coonova metoda|Metoda priamej syntÈzy regul·tora|Haalmanova metoda|Chienova - Hronesova - Reswickova metoda (0% prereg.)|Chienova - Hronesova - Reswickova metoda (20% prereg.)|Metoda poloviËnÈho ˙tlmu|Riverova - Morariho metoda|Riverova - Morariho metoda (zlepöenÈ)|Minimum IAE metoda|Minimum ITAE metoda|Lopezova IAE-ISE metoda|Astromova - Hagglundova metoda (Ms = 1.4)|Astromova - Hagglundova metoda (Ms = 2.0)';
+                  ptv_str = 'Zieglerova - Nicholsova met√≥da|Strejcova met√≥da|Cohenova - Coonova met√≥da|Met√≥da priamej synt√©zy regul√°tora|Haalmanova met√≥da|Chienova - Hronesova - Reswickova met√≥da (0% prereg.)|Chienova - Hronesova - Reswickova met√≥da (20% prereg.)|Met√≥da poloviƒçn√©ho √∫tlmu|Riverova - Morariho met√≥da|Riverova - Morariho met√≥da (zlep≈°en√©)|Minimum IAE met√≥da|Minimum ITAE met√≥da|Lopezova IAE-ISE met√≥da|Astromova - Hagglundova met√≥da (Ms = 1.4)|Astromova - Hagglundova met√≥da (Ms = 2.0)';
               case 3
-                  ptv_str = 'Zieglerova - Nicholsova metoda|Strejcova metoda |Cohenova - Coonova metoda|Metoda priamej syntÈzy regul·tora|Chienova - Hronesova - Reswickova metoda (0% prereg.)|Chienova - Hronesova - Reswickova metoda (20% prereg.)|Metoda poloviËnÈho ˙tlmu|Riverova - Morariho metoda|Minimum IAE metoda|Minimum ITAE metoda|Lopezova IAE-ISE metoda|Astromova - Hagglundova metoda (Ms = 1.4)|Astromova - Hagglundova metoda (Ms = 2.0)';
+                  ptv_str = 'Zieglerova - Nicholsova met√≥da|Strejcova met√≥da |Cohenova - Coonova met√≥da|Met√≥da priamej synt√©zy regul√°tora|Chienova - Hronesova - Reswickova met√≥da (0% prereg.)|Chienova - Hronesova - Reswickova met√≥da (20% prereg.)|Met√≥da poloviƒçn√©ho √∫tlmu|Riverova - Morariho met√≥da|Minimum IAE met√≥da|Minimum ITAE met√≥da|Lopezova IAE-ISE met√≥da|Astromova - Hagglundova met√≥da (Ms = 1.4)|Astromova - Hagglundova met√≥da (Ms = 2.0)';
               case 4
-                  ptv_str = 'Cohenova - Coonova metoda';
+                  ptv_str = 'Cohenova - Coonova met√≥da';
               case 5
-                  ptv_str = 'Metoda umiestnenia polov|Naslinova metoda';
+                  ptv_str = 'Met√≥da umiestnenia polov|Naslinova met√≥da';
               case 6
-                  ptv_str = 'Metoda umiestnenia polov|Naslinova metoda|Metoda zalozen· na bezpeËnosti v zosilnenÌ a vo f·ze|Metoda poûadovanÈho modelu|Metoda n·sobnÈho dominantnÈho polu|Metoda optim·lneho modulu';
+                  ptv_str = 'Met√≥da umiestnenia polov|Naslinova met√≥da|Met√≥da zalozen√° na bezpeƒçnosti v zosilnen√≠ a vo f√°ze|Met√≥da po≈æadovan√©ho modelu|Met√≥da n√°sobn√©ho dominantn√©ho polu|Met√≥da optim√°lneho modulu';
               case 7
-                  ptv_str = 'Metoda umiestnenia polov|Naslinova metoda|Metoda zalozen· na bezpeËnosti v zosilnenÌ a vo f·ze|Metoda poûadovanÈho modelu|Metoda n·sobnÈho dominantnÈho polu|Metoda optim·lneho modulu';
+                  ptv_str = 'Met√≥da umiestnenia p√≥lov|Naslinova met√≥da|Met√≥da zalozen√° na bezpeƒçnosti v zosilnen√≠ a vo f√°ze|Met√≥da po≈æadovan√©ho modelu|Met√≥da n√°sobn√©ho dominantn√©ho polu|Met√≥da optim√°lneho modulu';
               case 8
-                  ptv_str = 'Metoda umiestnenia polov|Naslinova metoda';
+                  ptv_str = 'Met√≥da umiestnenia p√≥lov|Naslinova met√≥da';
               case 9
-                  ptv_str = ' R·d n musÌ byù v‰ËöÌ ako 1!';
+                  ptv_str = ' R√°d n mus√≠ by≈• v√§ƒç≈°√≠ ako 1!';
               case 10
-                  ptv_str = ' R·d n musÌ byù v‰ËöÌ ako 2!';
+                  ptv_str = ' R√°d n mus√≠ by≈• v√§ƒç≈°√≠ ako 2!';
               case 11
-                  ptv_str = ' Casov· konötanta uzavretÈho reg. obvodu T_URO < Tn';
+                  ptv_str = ' ƒåasov√° kon≈°tanta uzavret√©ho reg. obvodu T_URO < Tn';
               case 12
                   ptv_str = 'T_URO = ';
               case 13
-                  ptv_str = ' Riadenie na ûiadan˙ hodnotu';
+                  ptv_str = ' Riadenie na ≈æiadan√∫ hodnotu';
               case 14
-                  ptv_str = ' OdstraÚovanie vplyvu poruchy';
+                  ptv_str = ' Odstra≈àovanie vplyvu poruchy';
               case 15
-                  ptv_str = ' Casov· konötanta URO T_URO>0.2*Tn a T_URO>1.7*Tu';
+                  ptv_str = ' ƒåasov√° kon≈°tanta URO T_URO>0.2*Tn a T_URO>1.7*Tu';
               case 16
-                  ptv_str = ' Maxim·lne preregulovanie:';
+                  ptv_str = ' Maxim√°lne preregulovanie:';
               case 17
                   ptv_str = ' 0%| 5%| 10%| 15%| 20%| 25%| 30%| 35%| 40%| 45%| 50%';
               case 18
-                  ptv_str = ' Casov· konötanta uzavretÈho reg. obvodu T_URO>0.2Tn a (T_URO/Tu)>0.25';
+                  ptv_str = ' ƒåasov√° kon≈°tanta uzavret√©ho reg. obvodu T_URO>0.2Tn a (T_URO/Tu)>0.25';
               case 19
                   ptv_str = ' 1 %| 3 %| 5 %| 8 %| 12 %| 16 %| 20 %';
               case 20
-                  ptv_str = ' Parametre referenËnÈho prenosu:';
+                  ptv_str = ' Parametre referenƒçn√©ho prenosu:';
               case 21
-                  ptv_str = ' ReferenËn˝ polynom:';
+                  ptv_str = ' Referenƒçn√Ω polynom:';
               case 22
-                  ptv_str = ' Vlastn˝| Binomick˝| Butterworthov| Minimum t(5%)| Minimum kritÈria ITAE';
+                  ptv_str = ' Vlastn√Ω| Binomick√Ω| Butterworthov| Minimum t(5%)| Minimum krit√©ria ITAE';
               case 23
                   ptv_str = 'ksi_0 =';
               case 24
                   ptv_str = 'w_0 =';
               case 25
-                  ptv_str = ' Zadan˝ pol w_0 je nestabiln˝!';
+                  ptv_str = ' Zadan√Ω pol w_0 je nestabiln√Ω!';
               case 26
                   ptv_str = 'S_0 = ';
               case 27
-                  ptv_str = 'DopoËÌtal sa nestabiln˝ pol!';
+                  ptv_str = 'Dopoƒç√≠tal sa nestabiln√Ω pol!';
               case 28
-                  ptv_str = 'DopoËÌtal sa stabiln˝ pol!';
+                  ptv_str = 'Dopoƒç√≠tal sa stabiln√Ω pol!';
               case 29
-                  ptv_str = ' R·d n musÌ byù 2 alebo 3!';
+                  ptv_str = ' R√°d n mus√≠ by≈• 2 alebo 3!';
               case 30
-                  ptv_str = ' Poûaduje sa aperiodick˝ model druhÈho r·du!';
+                  ptv_str = ' Po≈æaduje sa aperiodick√Ω model druh√©ho r√°du!';
               case 31
-                  ptv_str = ' Metoda poûaduje dopravnÈ oneskorenie D ako kladnÈ ËÌslo!';
+                  ptv_str = ' Met√≥da po≈æaduje dopravn√© oneskorenie D ako kladn√© ƒç√≠slo!';
               case 32
-                  ptv_str = ' R·d n musÌ byù 1!';
+                  ptv_str = ' R√°d n mus√≠ by≈• 1!';
               case 33
-                  ptv_str = 'Zadajte bezpeËnosù v zosilnenÌ Gm a vo f·ze Pm:';
+                  ptv_str = 'Zadajte bezpeƒçnos≈• v zosilnen√≠ Gm a vo f√°ze Pm:';
               case 34
                   ptv_str = 'Gm [dB]';
               case 35
                   ptv_str = 'Pm [deg]';
               case 36
-                  ptv_str = ' BezpeËnosù v zosilnenÌ Gm musÌ byù v‰Ëöia ako 1!';
+                  ptv_str = ' Bezpeƒçnos≈• v zosilnen√≠ Gm mus√≠ by≈• v√§ƒç≈°ia ako 1!';
               case 37
-                  ptv_str = ' Pre dan˝ model procesu nie je moûnÈ navrhn˙ù regul·tor pomocou vybranej metody!';
+                  ptv_str = ' Pre dan√Ω model procesu nie je mo≈æn√© navrhn√∫≈• regul√°tor pomocou vybranej met√≥dy!';
               case 38
-                  ptv_str = ' R·d n musÌ byù 3!';
+                  ptv_str = ' R√°d n mus√≠ by≈• 3!';
               case 39
-                  ptv_str = ' Poûaduje sa aperiodick˝ model!';
+                  ptv_str = ' Po≈æaduje sa aperiodick√Ω model!';
               case 40
-                  ptv_str = ' Pri syntÈze PID regul·tora sa oËak·va model procesu 2. r·du!';
+                  ptv_str = ' Pri synt√©ze PID regul√°tora sa oƒçak√°va model procesu 2. r√°du!';
               case 41
-                  ptv_str = ' Koeficient tlmenia ksi_pe m· byù v‰ËöÌ ako 0.71!';
+                  ptv_str = ' Koeficient tlmenia ksi_pe m√° by≈• v√§ƒç≈°√≠ ako 0.71!';
               case 42
-                  ptv_str = ' Koeficient tlmenia ksi_pe m· byù v‰ËöÌ ako 0.5!';
+                  ptv_str = ' Koeficient tlmenia ksi_pe m√° by≈• v√§ƒç≈°√≠ ako 0.5!';
               case 43
-                  ptv_str = ' R·d n musÌ byù menöÌ ako 3!';
+                  ptv_str = ' R√°d n mus√≠ by≈• men≈°√≠ ako 3!';
               case 44
-                  ptv_str = ' T·to metoda poûaduje Tu > 0!';
+                  ptv_str = ' T√°to met√≥da po≈æaduje Tu > 0!';
               otherwise
                   ptv_str=ptg_string_0(ptv_str_cat,ptv_str_num);
            end
